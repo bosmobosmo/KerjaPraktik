@@ -326,7 +326,7 @@
             data: {
                 labels: [month[(thisMonth+10) % 12], month[(thisMonth + 11) % 12], month[thisMonth]],
                 datasets: [{
-                    label: "Jumlah permintaan",
+                    label: "lss",
                     backgroundColor: "#4e73df",
                     hoverBackgroundColor: "#2e59d9",
                     borderColor: "#4e73df",
@@ -341,6 +341,26 @@
                         ?>,
                         <?php
                         $bulan_ini = mysqli_query($db, "SELECT * FROM lss WHERE (MONTH(dateReceived) = MONTH(NOW()))");
+                        echo mysqli_num_rows($bulan_ini);
+                        ?>
+                    ]
+                },
+                {
+                    label: "bukubaru",
+                    backgroundColor: "#1cc88a",
+                    hoverBackgroundColor: "#17a673",
+                    borderColor: "#1cc88a",
+                    data: [
+                        <?php
+                        $dua_bulan_lalu = mysqli_query($db, "SELECT * FROM bukubaru WHERE (MONTH(dateReceived) = (MONTH(NOW() - INTERVAL 2 MONTH)))");
+                        echo mysqli_num_rows($dua_bulan_lalu);
+                        ?>,
+                        <?php
+                        $bulan_lalu = mysqli_query($db, "SELECT * FROM bukubaru WHERE (MONTH(dateReceived) = (MONTH(NOW() - INTERVAL 1 MONTH)))");
+                        echo mysqli_num_rows($bulan_lalu);
+                        ?>,
+                        <?php
+                        $bulan_ini = mysqli_query($db, "SELECT * FROM bukubaru WHERE (MONTH(dateReceived) = MONTH(NOW()))");
                         echo mysqli_num_rows($bulan_ini);
                         ?>
                     ]
