@@ -37,7 +37,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">IFOLIB</div>
+                <div class="sidebar-brand-text mx-3">Perpustakaan ITS</div>
             </a>
 
             <hr class="sidebar-divider">

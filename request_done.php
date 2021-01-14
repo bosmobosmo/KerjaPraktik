@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>List VRS</title>
+    <title>List Request</title>
 
     <link href="IFOLIB - Informatics Open Library_files/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -37,7 +37,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">IFOLIB</div>
+                <div class="sidebar-brand-text mx-3">Perpustakaan ITS</div>
             </a>
 
             <hr class="sidebar-divider">
@@ -118,7 +118,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading --> 
-                    <h1 class="h3 mb-2 text-gray-800">VRS selesai</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Request selesai</h1>
 
                     <!-- Table start --> 
                     <div class="card shadow mb-4">
