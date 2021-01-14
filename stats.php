@@ -149,9 +149,9 @@
                                                 <tr>
                                                     <?php
                                                     $months = array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "Nopember", "Desember");
-                                                    echo "<th>".$months[date('m')-3]."</th>";
-                                                    echo "<th>".$months[date('m')-2]."</th>";
-                                                    echo "<th>".$months[date('m')-1]."</th>";
+                                                    echo "<th>".$months[(date('m')+9) % 12]."</th>";
+                                                    echo "<th>".$months[(date('m')+10) % 12]."</th>";
+                                                    echo "<th>".$months[(date('m')+11) % 12]."</th>";
                                                     ?>
                                                 </tr>
                                             </thead>
@@ -324,7 +324,7 @@
         var monthlyUser = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: [month[thisMonth-2], month[thisMonth-1], month[thisMonth]],
+                labels: [month[(thisMonth+10) % 12], month[(thisMonth + 11) % 12], month[thisMonth]],
                 datasets: [{
                     label: "Jumlah permintaan",
                     backgroundColor: "#4e73df",
